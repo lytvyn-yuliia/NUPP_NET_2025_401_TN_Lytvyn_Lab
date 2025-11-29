@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.7.34031.279
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Journalism.REST", "Journalism.REST\Journalism.REST.csproj", "{451CDCCA-1E70-4923-B837-64CD5016BA70}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Journalism.Mvc", "Journalism.Mvc\Journalism.Mvc.csproj", "{38790D15-03B1-4E2E-95C5-2387C38FD3A1}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{451CDCCA-1E70-4923-B837-64CD5016BA70}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{451CDCCA-1E70-4923-B837-64CD5016BA70}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{451CDCCA-1E70-4923-B837-64CD5016BA70}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{451CDCCA-1E70-4923-B837-64CD5016BA70}.Release|Any CPU.Build.0 = Release|Any CPU
+		{38790D15-03B1-4E2E-95C5-2387C38FD3A1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{38790D15-03B1-4E2E-95C5-2387C38FD3A1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{38790D15-03B1-4E2E-95C5-2387C38FD3A1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{38790D15-03B1-4E2E-95C5-2387C38FD3A1}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C582AF2C-F426-43B5-90FA-A217516B4807}
+	EndGlobalSection
+EndGlobal

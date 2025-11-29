@@ -1,0 +1,89 @@
+is_global = true
+build_property.TargetFramework = net7.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = Journalism.Mvc
+build_property.RootNamespace = Journalism.Mvc
+build_property.ProjectDir = C:\Users\user\Desktop\NUPP_NET_2025_401_TN_Lytvyn_Lab\NUPP_NET_2025_401_TN_Lytvyn_Lab\Lab4\Journalism.REST\Journalism.Mvc\
+build_property.RazorLangVersion = 7.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\Users\user\Desktop\NUPP_NET_2025_401_TN_Lytvyn_Lab\NUPP_NET_2025_401_TN_Lytvyn_Lab\Lab4\Journalism.REST\Journalism.Mvc
+build_property._RazorSourceGeneratorDebug = 
+
+[C:/Users/user/Desktop/NUPP_NET_2025_401_TN_Lytvyn_Lab/NUPP_NET_2025_401_TN_Lytvyn_Lab/Lab4/Journalism.REST/Journalism.Mvc/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Q3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/user/Desktop/NUPP_NET_2025_401_TN_Lytvyn_Lab/NUPP_NET_2025_401_TN_Lytvyn_Lab/Lab4/Journalism.REST/Journalism.Mvc/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = RGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/user/Desktop/NUPP_NET_2025_401_TN_Lytvyn_Lab/NUPP_NET_2025_401_TN_Lytvyn_Lab/Lab4/Journalism.REST/Journalism.Mvc/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = RGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/user/Desktop/NUPP_NET_2025_401_TN_Lytvyn_Lab/NUPP_NET_2025_401_TN_Lytvyn_Lab/Lab4/Journalism.REST/Journalism.Mvc/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = RWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/user/Desktop/NUPP_NET_2025_401_TN_Lytvyn_Lab/NUPP_NET_2025_401_TN_Lytvyn_Lab/Lab4/Journalism.REST/Journalism.Mvc/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = SW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/user/Desktop/NUPP_NET_2025_401_TN_Lytvyn_Lab/NUPP_NET_2025_401_TN_Lytvyn_Lab/Lab4/Journalism.REST/Journalism.Mvc/Pages/Articles/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQXJ0aWNsZXNcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/user/Desktop/NUPP_NET_2025_401_TN_Lytvyn_Lab/NUPP_NET_2025_401_TN_Lytvyn_Lab/Lab4/Journalism.REST/Journalism.Mvc/Pages/Articles/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQXJ0aWNsZXNcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/user/Desktop/NUPP_NET_2025_401_TN_Lytvyn_Lab/NUPP_NET_2025_401_TN_Lytvyn_Lab/Lab4/Journalism.REST/Journalism.Mvc/Pages/Articles/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQXJ0aWNsZXNcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/user/Desktop/NUPP_NET_2025_401_TN_Lytvyn_Lab/NUPP_NET_2025_401_TN_Lytvyn_Lab/Lab4/Journalism.REST/Journalism.Mvc/Pages/Articles/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQXJ0aWNsZXNcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/user/Desktop/NUPP_NET_2025_401_TN_Lytvyn_Lab/NUPP_NET_2025_401_TN_Lytvyn_Lab/Lab4/Journalism.REST/Journalism.Mvc/Pages/Articles/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQXJ0aWNsZXNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/user/Desktop/NUPP_NET_2025_401_TN_Lytvyn_Lab/NUPP_NET_2025_401_TN_Lytvyn_Lab/Lab4/Journalism.REST/Journalism.Mvc/Pages/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZhbGlkYXRpb25TY3JpcHRzUGFydGlhbC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/user/Desktop/NUPP_NET_2025_401_TN_Lytvyn_Lab/NUPP_NET_2025_401_TN_Lytvyn_Lab/Lab4/Journalism.REST/Journalism.Mvc/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/user/Desktop/NUPP_NET_2025_401_TN_Lytvyn_Lab/NUPP_NET_2025_401_TN_Lytvyn_Lab/Lab4/Journalism.REST/Journalism.Mvc/Views/Home/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/user/Desktop/NUPP_NET_2025_401_TN_Lytvyn_Lab/NUPP_NET_2025_401_TN_Lytvyn_Lab/Lab4/Journalism.REST/Journalism.Mvc/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/user/Desktop/NUPP_NET_2025_401_TN_Lytvyn_Lab/NUPP_NET_2025_401_TN_Lytvyn_Lab/Lab4/Journalism.REST/Journalism.Mvc/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/user/Desktop/NUPP_NET_2025_401_TN_Lytvyn_Lab/NUPP_NET_2025_401_TN_Lytvyn_Lab/Lab4/Journalism.REST/Journalism.Mvc/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/user/Desktop/NUPP_NET_2025_401_TN_Lytvyn_Lab/NUPP_NET_2025_401_TN_Lytvyn_Lab/Lab4/Journalism.REST/Journalism.Mvc/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/user/Desktop/NUPP_NET_2025_401_TN_Lytvyn_Lab/NUPP_NET_2025_401_TN_Lytvyn_Lab/Lab4/Journalism.REST/Journalism.Mvc/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-j6xj6bxu9o

@@ -1,8 +1,9 @@
 {
   "ExpandedNodes": [
     "",
-    "\\Lab2"
+    "\\Lab2",
+    "\\TestProject1"
   ],
-  "SelectedNode": "\\Lab2\\Bus.cs",
+  "SelectedNode": "\\Lab2\\CrudServiceAsync.cs",
   "PreviewInSolutionExplorer": false
 }

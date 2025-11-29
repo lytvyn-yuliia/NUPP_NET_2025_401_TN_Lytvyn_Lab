@@ -1,0 +1,14 @@
+C:\Users\user\Desktop\NUPP_NET_2025_401_TN_Lytvyn_Lab\NUPP_NET_2025_401_TN_Lytvyn_Lab\Lab3\lab3\Journalism.Infrastructure\bin\Debug\net6.0\Journalism.Infrastructure.deps.json
+C:\Users\user\Desktop\NUPP_NET_2025_401_TN_Lytvyn_Lab\NUPP_NET_2025_401_TN_Lytvyn_Lab\Lab3\lab3\Journalism.Infrastructure\bin\Debug\net6.0\Journalism.Infrastructure.runtimeconfig.json
+C:\Users\user\Desktop\NUPP_NET_2025_401_TN_Lytvyn_Lab\NUPP_NET_2025_401_TN_Lytvyn_Lab\Lab3\lab3\Journalism.Infrastructure\bin\Debug\net6.0\Journalism.Infrastructure.dll
+C:\Users\user\Desktop\NUPP_NET_2025_401_TN_Lytvyn_Lab\NUPP_NET_2025_401_TN_Lytvyn_Lab\Lab3\lab3\Journalism.Infrastructure\bin\Debug\net6.0\Journalism.Infrastructure.pdb
+C:\Users\user\Desktop\NUPP_NET_2025_401_TN_Lytvyn_Lab\NUPP_NET_2025_401_TN_Lytvyn_Lab\Lab3\lab3\Journalism.Infrastructure\obj\Debug\net6.0\Journalism.Infrastructure.csproj.AssemblyReference.cache
+C:\Users\user\Desktop\NUPP_NET_2025_401_TN_Lytvyn_Lab\NUPP_NET_2025_401_TN_Lytvyn_Lab\Lab3\lab3\Journalism.Infrastructure\obj\Debug\net6.0\Journalism.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\user\Desktop\NUPP_NET_2025_401_TN_Lytvyn_Lab\NUPP_NET_2025_401_TN_Lytvyn_Lab\Lab3\lab3\Journalism.Infrastructure\obj\Debug\net6.0\Journalism.Infrastructure.AssemblyInfoInputs.cache
+C:\Users\user\Desktop\NUPP_NET_2025_401_TN_Lytvyn_Lab\NUPP_NET_2025_401_TN_Lytvyn_Lab\Lab3\lab3\Journalism.Infrastructure\obj\Debug\net6.0\Journalism.Infrastructure.AssemblyInfo.cs
+C:\Users\user\Desktop\NUPP_NET_2025_401_TN_Lytvyn_Lab\NUPP_NET_2025_401_TN_Lytvyn_Lab\Lab3\lab3\Journalism.Infrastructure\obj\Debug\net6.0\Journalism.Infrastructure.csproj.CoreCompileInputs.cache
+C:\Users\user\Desktop\NUPP_NET_2025_401_TN_Lytvyn_Lab\NUPP_NET_2025_401_TN_Lytvyn_Lab\Lab3\lab3\Journalism.Infrastructure\obj\Debug\net6.0\Journalism.Infrastructure.dll
+C:\Users\user\Desktop\NUPP_NET_2025_401_TN_Lytvyn_Lab\NUPP_NET_2025_401_TN_Lytvyn_Lab\Lab3\lab3\Journalism.Infrastructure\obj\Debug\net6.0\refint\Journalism.Infrastructure.dll
+C:\Users\user\Desktop\NUPP_NET_2025_401_TN_Lytvyn_Lab\NUPP_NET_2025_401_TN_Lytvyn_Lab\Lab3\lab3\Journalism.Infrastructure\obj\Debug\net6.0\Journalism.Infrastructure.pdb
+C:\Users\user\Desktop\NUPP_NET_2025_401_TN_Lytvyn_Lab\NUPP_NET_2025_401_TN_Lytvyn_Lab\Lab3\lab3\Journalism.Infrastructure\obj\Debug\net6.0\Journalism.Infrastructure.genruntimeconfig.cache
+C:\Users\user\Desktop\NUPP_NET_2025_401_TN_Lytvyn_Lab\NUPP_NET_2025_401_TN_Lytvyn_Lab\Lab3\lab3\Journalism.Infrastructure\obj\Debug\net6.0\ref\Journalism.Infrastructure.dll
