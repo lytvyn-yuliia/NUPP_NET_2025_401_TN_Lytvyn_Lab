@@ -38,7 +38,6 @@ C:\Users\user\Desktop\NUPP_NET_2025_401_TN_Lytvyn_Lab\NUPP_NET_2025_401_TN_Lytvy
 C:\Users\user\Desktop\NUPP_NET_2025_401_TN_Lytvyn_Lab\NUPP_NET_2025_401_TN_Lytvyn_Lab\Lab2\Lab2\bin\Debug\System.Numerics.Vectors.dll
 C:\Users\user\Desktop\NUPP_NET_2025_401_TN_Lytvyn_Lab\NUPP_NET_2025_401_TN_Lytvyn_Lab\Lab2\Lab2\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
 C:\Users\user\Desktop\NUPP_NET_2025_401_TN_Lytvyn_Lab\NUPP_NET_2025_401_TN_Lytvyn_Lab\Lab2\Lab2\bin\Debug\System.Text.Encodings.Web.dll
-C:\Users\user\Desktop\NUPP_NET_2025_401_TN_Lytvyn_Lab\NUPP_NET_2025_401_TN_Lytvyn_Lab\Lab2\Lab2\bin\Debug\System.Text.Json.dll
 C:\Users\user\Desktop\NUPP_NET_2025_401_TN_Lytvyn_Lab\NUPP_NET_2025_401_TN_Lytvyn_Lab\Lab2\Lab2\bin\Debug\System.Threading.Tasks.Extensions.dll
 C:\Users\user\Desktop\NUPP_NET_2025_401_TN_Lytvyn_Lab\NUPP_NET_2025_401_TN_Lytvyn_Lab\Lab2\Lab2\bin\Debug\System.ValueTuple.dll
 C:\Users\user\Desktop\NUPP_NET_2025_401_TN_Lytvyn_Lab\NUPP_NET_2025_401_TN_Lytvyn_Lab\Lab2\Lab2\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
@@ -48,13 +47,12 @@ C:\Users\user\Desktop\NUPP_NET_2025_401_TN_Lytvyn_Lab\NUPP_NET_2025_401_TN_Lytvy
 C:\Users\user\Desktop\NUPP_NET_2025_401_TN_Lytvyn_Lab\NUPP_NET_2025_401_TN_Lytvyn_Lab\Lab2\Lab2\bin\Debug\System.Numerics.Vectors.xml
 C:\Users\user\Desktop\NUPP_NET_2025_401_TN_Lytvyn_Lab\NUPP_NET_2025_401_TN_Lytvyn_Lab\Lab2\Lab2\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
 C:\Users\user\Desktop\NUPP_NET_2025_401_TN_Lytvyn_Lab\NUPP_NET_2025_401_TN_Lytvyn_Lab\Lab2\Lab2\bin\Debug\System.Text.Encodings.Web.xml
-C:\Users\user\Desktop\NUPP_NET_2025_401_TN_Lytvyn_Lab\NUPP_NET_2025_401_TN_Lytvyn_Lab\Lab2\Lab2\bin\Debug\System.Text.Json.xml
 C:\Users\user\Desktop\NUPP_NET_2025_401_TN_Lytvyn_Lab\NUPP_NET_2025_401_TN_Lytvyn_Lab\Lab2\Lab2\bin\Debug\System.Threading.Tasks.Extensions.xml
 C:\Users\user\Desktop\NUPP_NET_2025_401_TN_Lytvyn_Lab\NUPP_NET_2025_401_TN_Lytvyn_Lab\Lab2\Lab2\bin\Debug\System.ValueTuple.xml
 C:\Users\user\Desktop\NUPP_NET_2025_401_TN_Lytvyn_Lab\NUPP_NET_2025_401_TN_Lytvyn_Lab\Lab2\Lab2\obj\Debug\Lab2.csproj.AssemblyReference.cache
-C:\Users\user\Desktop\NUPP_NET_2025_401_TN_Lytvyn_Lab\NUPP_NET_2025_401_TN_Lytvyn_Lab\Lab2\Lab2\obj\Debug\Lab2.csproj.SuggestedBindingRedirects.cache
-C:\Users\user\Desktop\NUPP_NET_2025_401_TN_Lytvyn_Lab\NUPP_NET_2025_401_TN_Lytvyn_Lab\Lab2\Lab2\obj\Debug\Lab2.exe.config
 C:\Users\user\Desktop\NUPP_NET_2025_401_TN_Lytvyn_Lab\NUPP_NET_2025_401_TN_Lytvyn_Lab\Lab2\Lab2\obj\Debug\Lab2.csproj.CoreCompileInputs.cache
 C:\Users\user\Desktop\NUPP_NET_2025_401_TN_Lytvyn_Lab\NUPP_NET_2025_401_TN_Lytvyn_Lab\Lab2\Lab2\obj\Debug\Lab2.csproj.CopyComplete
 C:\Users\user\Desktop\NUPP_NET_2025_401_TN_Lytvyn_Lab\NUPP_NET_2025_401_TN_Lytvyn_Lab\Lab2\Lab2\obj\Debug\Lab2.exe
 C:\Users\user\Desktop\NUPP_NET_2025_401_TN_Lytvyn_Lab\NUPP_NET_2025_401_TN_Lytvyn_Lab\Lab2\Lab2\obj\Debug\Lab2.pdb
+C:\Users\user\Desktop\NUPP_NET_2025_401_TN_Lytvyn_Lab\NUPP_NET_2025_401_TN_Lytvyn_Lab\Lab2\Lab2\bin\Debug\Newtonsoft.Json.dll
+C:\Users\user\Desktop\NUPP_NET_2025_401_TN_Lytvyn_Lab\NUPP_NET_2025_401_TN_Lytvyn_Lab\Lab2\Lab2\bin\Debug\Newtonsoft.Json.xml
