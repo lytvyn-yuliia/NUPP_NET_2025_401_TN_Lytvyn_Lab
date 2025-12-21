@@ -24,10 +24,4 @@
     <ProjectReference Include="..\Journalism.Infrastructure\Journalism.Infrastructure.csproj" />
   </ItemGroup>
 
-  <ItemGroup>
-    <None Update="journalism.db">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
-  </ItemGroup>
-
 </Project>

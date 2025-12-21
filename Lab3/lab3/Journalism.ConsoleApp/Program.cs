@@ -5,7 +5,7 @@ using Journalism.Infrastructure.Models;
 using Journalism.Infrastructure.Repositories;
 using Journalism.Infrastructure.Services;
 
-using Microsoft.EntityFrameworkCore;     // для Database.EnsureCreated()
+using Microsoft.EntityFrameworkCore;  
 
 
 
@@ -18,7 +18,6 @@ namespace Journalism.ConsoleApp
             Console.OutputEncoding = System.Text.Encoding.UTF8;
             Console.InputEncoding = System.Text.Encoding.UTF8;
 
-            //1. Налаштування контейнера залежностей
             var services = new ServiceCollection();
 
             services.AddDbContext<JournalismContext>();
@@ -26,11 +25,11 @@ namespace Journalism.ConsoleApp
             services.AddScoped(typeof(ICrudServiceAsync<>), typeof(CrudServiceAsync<>));
 
             var provider = services.BuildServiceProvider();
-            // Створюємо базу, якщо її немає
+            // Створюємо базу
             using (var scope = provider.CreateScope())
             {
                 var db = scope.ServiceProvider.GetRequiredService<JournalismContext>();
-                db.Database.EnsureCreated();   // команда створить БД і таблиці
+                db.Database.EnsureCreated();  
             }
 
             // Отримуємо сервіси

@@ -1,86 +1,77 @@
-﻿using Journalism.REST.Models;
-using Journalism.REST.Services;
-using Journalism.RestApi.Services;
+﻿using Journalism.Infrastructure.Models;
+using Journalism.Infrastructure.Services;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Authorization;
+using System.Collections.Generic;
+using System.Threading.Tasks;
 
 namespace Journalism.REST.Controllers
 {
-    [ApiController]
-    [Route("api/[controller]")]
-    public class JournalistsController : ControllerBase
-    {
-        private readonly ICrudServiceAsync<JournalistModel> _service;
+	[ApiController]
+	[Route("api/[controller]")]
+	[Authorize] 
+	public class JournalistsController : ControllerBase
+	{
+		private readonly ICrudServiceAsync<JournalistModel> _service;
 
-        public JournalistsController(ICrudServiceAsync<JournalistModel> service)
-        {
-            _service = service;
-        }
+		public JournalistsController(ICrudServiceAsync<JournalistModel> service)
+		{
+			_service = service;
+		}
 
-        // GET: api/Journalists
-        [HttpGet]
-        public async Task<ActionResult<IEnumerable<JournalistModel>>> GetAll()
-        {
-            var items = await _service.ReadAllAsync();
-            return Ok(items);
-        }
+		// GET: api/Journalists
+		[HttpGet]
+		[Authorize(Roles = "Journalist,Editor")]
+		public async Task<ActionResult<IEnumerable<JournalistModel>>> GetAll()
+		{
+			var items = await _service.ReadAllAsync();
+			return Ok(items);
+		}
 
-        // GET: api/Journalists/page/1/10
-        [HttpGet("page/{page:int}/{amount:int}")]
-        public async Task<ActionResult<IEnumerable<JournalistModel>>> GetPage(int page, int amount)
-        {
-            var items = await _service.ReadAllAsync(page, amount);
-            return Ok(items);
-        }
+		// GET: api/Journalists/5
+		[HttpGet("{id:int}")]
+		[Authorize(Roles = "Journalist,Editor")]
+		public async Task<ActionResult<JournalistModel>> GetById(int id)
+		{
+			var item = await _service.ReadAsync(id);
+			if (item == null) return NotFound();
 
-        // GET: api/Journalists/5
-        [HttpGet("{id:int}")]
-        public async Task<ActionResult<JournalistModel>> GetById(int id)
-        {
-            var item = await _service.ReadAsync(id);
-            if (item is null) return NotFound();
+			return Ok(item);
+		}
 
-            return Ok(item);
-        }
+		
 
-        // POST: api/Journalists
-        [HttpPost]
-        public async Task<ActionResult<JournalistModel>> Create([FromBody] JournalistModel model)
-        {
-            if (!ModelState.IsValid) return BadRequest(ModelState);
+		[HttpPost]
+		[Authorize(Roles = "Editor")]
+		public async Task<ActionResult> Create([FromBody] JournalistModel journalist)
+		{
+			var ok = await _service.CreateAsync(journalist);
+			if (!ok) return BadRequest();
 
-            var ok = await _service.CreateAsync(model);
-            if (!ok) return BadRequest("Не вдалося створити журналіста.");
+			return CreatedAtAction(nameof(GetById), new { id = journalist.Id }, journalist);
+		}
 
-            return CreatedAtAction(nameof(GetById), new { id = model.Id }, model);
-        }
+		[HttpPut("{id:int}")]
+		[Authorize(Roles = "Editor")]
+		public async Task<ActionResult> Update(int id, [FromBody] JournalistModel journalist)
+		{
+			if (id != journalist.Id) return BadRequest();
 
-        // PUT: api/Journalists/5
-        [HttpPut("{id:int}")]
-        public async Task<IActionResult> Update(int id, [FromBody] JournalistModel model)
-        {
-            if (id != model.Id)
-                return BadRequest("Id в маршруті та тілі запиту мають збігатися.");
+			var ok = await _service.UpdateAsync(journalist);
+			if (!ok) return NotFound();
 
-            var exists = await _service.ReadAsync(id);
-            if (exists is null) return NotFound();
+			return NoContent();
+		}
 
-            var ok = await _service.UpdateAsync(model);
-            if (!ok) return StatusCode(500, "Помилка при оновленні журналіста.");
+		[HttpDelete("{id:int}")]
+		[Authorize(Roles = "Editor")]
+		public async Task<ActionResult> Delete(int id)
+		{
+			var dummy = new JournalistModel { Id = id };
+			var ok = await _service.RemoveAsync(dummy);
+			if (!ok) return NotFound();
 
-            return NoContent(); // 204
-        }
-
-        // DELETE: api/Journalists/5
-        [HttpDelete("{id:int}")]
-        public async Task<IActionResult> Delete(int id)
-        {
-            var existing = await _service.ReadAsync(id);
-            if (existing is null) return NotFound();
-
-            var ok = await _service.RemoveAsync(existing);
-            if (!ok) return StatusCode(500, "Помилка при видаленні журналіста.");
-
-            return NoContent();
-        }
-    }
+			return NoContent();
+		}
+	}
 }

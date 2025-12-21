@@ -10,7 +10,7 @@ namespace Journalism.Infrastructure.Models
     {
         public int Id { get; set; }
         public string Name { get; set; } = string.Empty;
-        public int Experience { get; set; } // 👈 додай оце поле
+        public int Experience { get; set; }
         public string City { get; set; } = string.Empty;
 
         // Зв’язок із статтями

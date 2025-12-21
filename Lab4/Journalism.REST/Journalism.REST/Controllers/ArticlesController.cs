@@ -1,66 +1,92 @@
-﻿using Microsoft.AspNetCore.Mvc;
-using Journalism.RestApi.Models;
-using Journalism.RestApi.Services;
+﻿using Journalism.Infrastructure.Models;
+using Journalism.Infrastructure.Services;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Authorization;
+using System.Collections.Generic;
+using System.Threading.Tasks;
+using Journalism.REST.Models;
 
-namespace Journalism.RestApi.Controllers
+namespace Journalism.REST.Controllers
 {
-    [ApiController]
-    [Route("api/[controller]")]
-    public class ArticlesController : ControllerBase
-    {
-        private readonly ICrudServiceAsync<ArticleModel> _service;
+	[ApiController]
+	[Route("api/[controller]")]
+	[Authorize]
+	public class ArticlesController : ControllerBase
+	{
+		private readonly ICrudServiceAsync<ArticleModel> _service;
 
-        public ArticlesController(ICrudServiceAsync<ArticleModel> service)
-        {
-            _service = service;
-        }
+		public ArticlesController(ICrudServiceAsync<ArticleModel> service)
+		{
+			_service = service;
+		}
 
-        // GET: api/articles
-        [HttpGet]
-        public async Task<ActionResult<IEnumerable<ArticleModel>>> GetAll()
-        {
-            var items = await _service.ReadAllAsync();
-            return Ok(items);
-        }
+		
 
-        // GET: api/articles/5
-        [HttpGet("{id}")]
-        public async Task<ActionResult<ArticleModel>> GetById(int id)
-        {
-            var item = await _service.ReadAsync(id);
-            if (item == null) return NotFound();
-            return Ok(item);
-        }
+		// GET: api/Articles
+		[HttpGet]
+		[AllowAnonymous]
+		public async Task<ActionResult<IEnumerable<ArticleModel>>> GetAll()
+		{
+			var items = await _service.ReadAllAsync();
+			return Ok(items);
+		}
 
-        // POST: api/articles
-        [HttpPost]
-        public async Task<ActionResult> Create([FromBody] ArticleModel model)
-        {
-            await _service.CreateAsync(model);
-            return CreatedAtAction(nameof(GetById), new { id = model.Id }, model);
-        }
+		// GET: api/Articles/5
+		[HttpGet("{id:int}")]
+		[AllowAnonymous]
+		public async Task<ActionResult<ArticleModel>> GetById(int id)
+		{
+			var item = await _service.ReadAsync(id);
+			if (item == null) return NotFound();
 
-        // PUT: api/articles/5
-        [HttpPut("{id}")]
-        public async Task<ActionResult> Update(int id, [FromBody] ArticleModel model)
-        {
-            if (id != model.Id) return BadRequest("Id в URL і тілі не збігаються");
+			return Ok(item);
+		}
 
-            var ok = await _service.UpdateAsync(model);
-            if (!ok) return NotFound();
 
-            return NoContent();
-        }
 
-        // DELETE: api/articles/5
-        [HttpDelete("{id}")]
-        public async Task<ActionResult> Delete(int id)
-        {
-            var existing = await _service.ReadAsync(id);
-            if (existing == null) return NotFound();
+		[HttpPost]
+		[Authorize(Roles = "Journalist,Editor")]
+		public async Task<ActionResult<ArticleModel>> Create([FromBody] ArticleCreateRequest request)
+		{
+			if (!ModelState.IsValid)
+				return BadRequest(ModelState);
 
-            await _service.RemoveAsync(existing);
-            return NoContent();
-        }
-    }
+			var article = new ArticleModel
+			{
+				Title = request.Title,
+				Category = request.Category,
+				JournalistId = request.JournalistId
+			};
+
+			await _service.CreateAsync(article);
+
+			return CreatedAtAction(nameof(GetById), new { id = article.Id }, article);
+		}
+
+
+		// PUT: api/Articles/5
+		[HttpPut("{id:int}")]
+		[Authorize(Roles = "Journalist,Editor")]
+		public async Task<ActionResult> Update(int id, [FromBody] ArticleModel article)
+		{
+			if (id != article.Id) return BadRequest();
+
+			var ok = await _service.UpdateAsync(article);
+			if (!ok) return NotFound();
+
+			return NoContent();
+		}
+
+		// DELETE: api/Articles/5
+		[HttpDelete("{id:int}")]
+		[Authorize(Roles = "Editor")] // тільки редактор може видаляти
+		public async Task<ActionResult> Delete(int id)
+		{
+			var dummy = new ArticleModel { Id = id };
+			var ok = await _service.RemoveAsync(dummy);
+			if (!ok) return NotFound();
+
+			return NoContent();
+		}
+	}
 }

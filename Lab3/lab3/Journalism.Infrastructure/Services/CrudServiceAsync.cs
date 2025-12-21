@@ -43,7 +43,7 @@ namespace Journalism.Infrastructure.Services
 
         public async Task<bool> SaveAsync()
         {
-            // Цей метод зараз не обов’язковий, бо SaveChanges виконується у Repository
+            
             return await Task.FromResult(true);
         }
     }
